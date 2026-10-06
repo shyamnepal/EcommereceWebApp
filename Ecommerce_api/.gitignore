@@ -1,0 +1,41 @@
+﻿# Build output
+**/bin/
+**/obj/
+**/bin\\Debug/
+
+# macOS
+.DS_Store
+
+# Visual Studio / IDE
+.vs/
+.vscode/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+*.iml
+
+# Secrets and local configuration — do not push to GitHub
+**/appsettings.json
+**/appsettings.*.json
+!**/appsettings.example.json
+**/secrets.json
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs, temp, and cache
+*.log
+*.tmp
+*.cache
+logs/
+
+# Compiled binaries
+*.dll
+*.exe
+
+# Node (if any frontend deps live in this repo)
+node_modules/
+package-lock.json
