@@ -1,0 +1,210 @@
+.checkout-page {
+  padding: 2rem 1rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.checkout-container {
+  margin-bottom: 2rem;
+}
+
+.checkout-container h1 {
+  margin-bottom: 1rem;
+  color: #1e293b;
+  font-size: 1.5rem;
+}
+
+.checkout-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.checkout-section {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  background: #fff;
+}
+
+.checkout-section h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.checkout-summary-list {
+  list-style: none;
+  margin: 0 0 0.75rem 0;
+  padding: 0;
+}
+
+.checkout-summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.35rem 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.checkout-total {
+  font-weight: 700;
+  color: #dc2626;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.checkout-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.checkout-form-full {
+  grid-column: 1 / -1;
+}
+
+.checkout-section label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.checkout-section input,
+.checkout-section select {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.checkout-section input:focus,
+.checkout-section select:focus {
+  outline: none;
+  border-color: #dc2626;
+}
+
+.checkout-section input::placeholder {
+  color: #94a3b8;
+}
+
+.checkout-card-hint {
+  margin: 0 0 1rem 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.checkout-card-label {
+  display: block;
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Stripe injects iframes here – ensure container allows input and has visible height */
+.checkout-card-element {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  min-height: 48px;
+  margin-bottom: 1rem;
+}
+
+.checkout-card-element iframe {
+  width: 100% !important;
+}
+
+.checkout-card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.checkout-card-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-card-element-small {
+  min-height: 48px;
+  margin-bottom: 0;
+}
+
+.checkout-loading-card {
+  margin: 0.5rem 0 0 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.checkout-btn-primary {
+  padding: 0.85rem 1.5rem;
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.checkout-btn-primary:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+.checkout-btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.checkout-btn-pay {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/* Success state */
+.checkout-success {
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.checkout-success h1 {
+  color: #16a34a;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.checkout-success p {
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.checkout-success-note {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .checkout-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

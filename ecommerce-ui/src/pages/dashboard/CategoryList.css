@@ -1,0 +1,19 @@
+.category-name {
+  font-weight: 650;
+  color: #0f172a;
+}
+
+.category-desc {
+  color: #64748b;
+  max-width: 420px;
+}
+
+.category-page .dash-cards {
+  grid-template-columns: repeat(2, minmax(0, 280px));
+}
+
+@media (max-width: 520px) {
+  .category-page .dash-cards {
+    grid-template-columns: 1fr;
+  }
+}

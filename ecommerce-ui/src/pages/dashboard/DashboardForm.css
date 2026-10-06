@@ -1,0 +1,123 @@
+.dashboard-form {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 1.6rem 1.6rem 1.4rem;
+  max-width: 720px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1rem;
+}
+
+@media (max-width: 640px) {
+  .dashboard-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboard-form-grid .span-2 {
+  grid-column: 1 / -1;
+}
+
+.dashboard-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.85rem;
+}
+
+.dashboard-form input,
+.dashboard-form select,
+.dashboard-form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.4rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.dashboard-form input:focus,
+.dashboard-form select:focus,
+.dashboard-form textarea:focus {
+  outline: none;
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.dashboard-form-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.65rem;
+}
+
+.dashboard-form .dashboard-error {
+  margin-bottom: 1rem;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.dashboard-form .dashboard-success {
+  margin-bottom: 1rem;
+  padding: 0.6rem 0.75rem;
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.dashboard-form-images {
+  margin-top: 1.5rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.dashboard-form-images h3 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.dashboard-form-hint {
+  margin: 0 0 0.9rem 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.dashboard-form-images input[type="file"] {
+  margin-bottom: 1rem;
+}
+
+.dashboard-image-list {
+  list-style: none;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 0.85rem;
+}
+
+.dashboard-image-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.45rem;
+}
+
+.dashboard-image-list img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+}

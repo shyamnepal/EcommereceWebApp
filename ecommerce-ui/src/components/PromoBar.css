@@ -1,0 +1,13 @@
+.promo-bar {
+  background: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 0.45rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.promo-bar p {
+  margin: 0;
+}

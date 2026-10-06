@@ -1,0 +1,21 @@
+/* Match login page background */
+.home-page {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: linear-gradient(160deg, #fef2f2 0%, #fff 40%, #fef2f2 100%);
+  color: black
+}
+
+.home-auth-links {
+  margin-top: 1.5rem;
+}
+
+.home-auth-links a {
+  color: #dc2626;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-auth-links a:hover {
+  text-decoration: underline;
+}
